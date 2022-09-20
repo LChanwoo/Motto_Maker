@@ -17,11 +17,11 @@ const Preview = ({ color, text, userName, href, updateCanvas, setUrl, textColor 
         });
         setUrl(canvas.toDataURL());
         // const url = canvas.toDataURL();
-        console.log(canvas.toDataURL());
+        // console.log(canvas.toDataURL());
         // href !== url && updateCanvas(url);
     }
     const setFont = (canvas: any, text: string, userName: string, args: any) => {
-        const texts = text.split(",");
+        const texts = text.split(",_");
         const ctx = canvas.getContext("2d");
         const ctx2 = canvas.getContext("2d");
         const { color, size, font } = args;
@@ -32,9 +32,9 @@ const Preview = ({ color, text, userName, href, updateCanvas, setUrl, textColor 
             ctx.fillText(texts[i], 50, 100 + 80 * i);
         }
         ctx2.font = "normal bolder 30px Arial";
-        ctx2.textAlign = "center";
+        ctx2.textAlign = "right";
         ctx2.fillStyle = "black";
-        ctx2.fillText(`- ${userName}`, 400, 440);
+        ctx2.fillText(`- ${userName}`, 450, 440);
         // ctx2.fillText(`- ${userName}`, 225, 440);
 
     };

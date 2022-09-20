@@ -1,10 +1,10 @@
-const TextInput = ({ onChange }: any) => {
+const TextInput = ({ onChange, text }: any) => {
     return (
         <input className="textInput"
             onChange={onChange}
             type="text"
             size={40}
-            placeholder="Type text here!" />
+            placeholder={text} />
     );
 }
 
