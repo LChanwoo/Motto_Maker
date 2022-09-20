@@ -33,7 +33,7 @@ function App() {
 
   return (
     <>
-      <Preview color={color} text={text} userName={"無名의 NoName"} href={href} setUrl={setUrl} textColor={textColor} />
+      <Preview color={color} text={text} userName={"차예린"} href={href} setUrl={setUrl} textColor={textColor} />
       <div>
         <TextInput onChange={handleTextChange} />
       </div>

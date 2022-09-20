@@ -34,7 +34,7 @@ const Preview = ({ color, text, userName, href, updateCanvas, setUrl, textColor 
         ctx2.font = "normal bolder 30px Arial";
         ctx2.textAlign = "center";
         ctx2.fillStyle = "black";
-        ctx2.fillText(`- ${userName}`, 350, 440);
+        ctx2.fillText(`- ${userName}`, 400, 440);
         // ctx2.fillText(`- ${userName}`, 225, 440);
 
     };
