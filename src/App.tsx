@@ -51,7 +51,9 @@ function App() {
         <Palette2 color={textColor} onChange={handleTextColorChange} />
         <h3>이름 색상변경은 미구현 입니다.</h3>
       </div>
-      <a href={url} className="downbutton" download={`${imageName}.png`}>Download</a>
+
+      <a href={url} className="downbutton" download={`${imageName}.png`}><button className={style.download_btn}>다운로드 버튼</button></a>
+
     </>
   );
 
