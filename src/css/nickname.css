@@ -17,11 +17,11 @@ color:
     width: calc(100% - 45px);
     font-size: 16px;
     font-weight: bold;
-    color: #64D8C3;
+    color: #F46036;
 } 
 .input01:focus {
     outline: 0;
-    border-bottom: 1px solid #64D8C3;
+    border-bottom: 1px solid #F46036;
 }
 .txt_number {
     font-size: 12px;

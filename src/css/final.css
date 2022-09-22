@@ -8,6 +8,33 @@ color:
 #ECF1F8 연한 gray
 
 */
+.final_page .final_contents {
+    justify-content: flex-start;
+}
+.final_page .logo_wrap {
+    margin-bottom: 38px;
+}
+/*멋진 좌우명이네요*/
+.final_headtxt_wrap {
+    border: 2px solid pink;
+    
+}
+.final_headtxt {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 26px;
+}
+
+/*bg선택*/
+.final_bg_wrap {
+    border: 2px solid blue;
+    height: 323px;
+    border-radius: 5px;
+}
 
 
-
+/*bg선택*/
+.pg_picker_wrap {
+    border: 2px solid cyan;
+}
