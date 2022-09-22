@@ -13,7 +13,8 @@ const getRandomColor = () => {
 
 function App() {
   const [color, setColor] = React.useState(getRandomColor());
-  const [text, setText] = React.useState('여기다가,넣어보자,명언을,멋드러지게');
+  const [text, setText] = React.useState('여기다가,_넣어보자,_명언을,_멋드러지게');
+  const [userName, setUserName] = React.useState('이름있음');
   const [textColor, setTextColor] = React.useState('#000000');
   const [url, setUrl] = React.useState('');
   const [imageName, setImageName] = React.useState('sample');
@@ -26,6 +27,9 @@ function App() {
   const handleTextChange = (e: any) => {
     setText(e.target.value);
   }
+  const handleNameChange = (e: any) => {
+    setUserName(e.target.value);
+  }
   const handleTextColorChange = (color: any) => {
     setTextColor(color.hex);
   }
@@ -33,15 +37,23 @@ function App() {
 
   return (
     <>
-      <Preview color={color} text={text} userName={"無名의 NoName"} href={href} setUrl={setUrl} textColor={textColor} />
+      <Preview color={color} text={text} userName={userName} href={href} setUrl={setUrl} textColor={textColor} />
       <div>
-        <TextInput onChange={handleTextChange} />
+        <h2>텍스트(줄바꿈 하려면  ,_ 를 입력해주세요)</h2>
+        <TextInput onChange={handleTextChange} text={text} />
+        <h2>이름</h2>
+        <TextInput onChange={handleNameChange} text={userName} />
       </div>
       <div>
+        <h2>배경색</h2>
         <Palette color={color} onChange={handleChange} />
+        <h2>텍스트색</h2>
         <Palette2 color={textColor} onChange={handleTextColorChange} />
+        <h3>이름 색상변경은 미구현 입니다.</h3>
       </div>
-      <a href={url} className="downbutton" download={`${imageName}.png`}>Download</a>
+
+      <a href={url} className="downbutton" download={`${imageName}.png`}><button className={style.download_btn}>다운로드 버튼</button></a>
+
     </>
   );
 
