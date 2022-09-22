@@ -1,0 +1,98 @@
+
+/*
+color:
+
+#64D8C3 main
+#272A32 black
+#A0AAC6 gray txt
+#ECF1F8 연한 gray
+
+*/
+
+/*토픽설정 영역*/
+.topic_wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.choice_inner {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    margin-bottom: 18px;
+}
+.topicbox {
+    font-size: 19px;
+    font-weight: bold;
+    height: 55px;
+    line-height: 55px;
+    background: #F8FAFD;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+}
+.topicbox.done {
+    background-color: #ECFAF8;
+}
+
+.topicbox:not(:last-child) {
+    margin-bottom: 23px;
+}
+.reset_wrap {
+    text-align: right;
+}
+.current {
+    background-color: #fff;
+    border-radius: 8px;
+    border: 2px solid #64D8C3;
+    box-shadow: 2px 3px 5px rgba(100, 216, 195, 0.4);
+    color: #64D8C3;
+}
+.fixed_box {
+    font-size: 19px;
+    font-weight: bold;
+    height: 55px;
+    line-height: 55px;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+
+/*키워드 선택 영역*/
+.keyword_wrap {
+    border-top: 1px solid #ECF1F8;
+    padding: 26px 0 36px 0;
+}
+.swiper_line1 {
+    margin-bottom: 18px;
+}
+
+
+.keyword {
+    white-space: nowrap;
+    padding: 9px 14px;
+    border-radius: 15px;
+    border: 1px solid #E3E9F0;
+    display: inline-block;
+    margin-right: 12px;
+    font-weight: 600;
+}
+.keyword:last-child {
+    margin-right: 0;
+}
+.random {
+    background-color: #64D8C3;
+    color: #fff;
+}
+.optionbox {
+    background-color: transparent;
+    color: #272A32;
+}
+.swiper-slide {
+    width: auto;
+}
