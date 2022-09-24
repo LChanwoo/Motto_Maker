@@ -1,0 +1,12 @@
+.intro_img {
+    height: 364px;
+    border-radius: 15px;
+    background: #F8FAFD;
+}
+.intro_heading_txt {
+    text-align: center;
+    margin: 34px 0 18px 0;
+}
+.intro_txt_wrap {
+    text-align: center;
+}
