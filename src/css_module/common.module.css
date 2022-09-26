@@ -1,0 +1,143 @@
+/*
+color:
+
+#64D8C3 main
+#272A32 black
+#A0AAC6 gray
+
+*/
+
+
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css');
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(228, 232, 238);
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui,
+        Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR',
+        'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+    font-size: 14px;
+    color: #272A32;
+}
+
+input {
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui,
+        Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR',
+        'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+}
+
+.container {
+    background-color: #fff;
+    border: 0px solid cyan;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    max-width: 650px;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+.inner {
+    width: calc(100% - 44px);
+    margin: 0 auto;
+    border: 0px solid cyan;
+}
+
+.flex {
+    display: flex;
+}
+
+.contents {
+    border: 0px solid green;
+    height: 100%;
+    overflow: hidden;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/*탑 부분*/
+.top {
+    border: 0px solid pink;
+}
+
+.top_inner {
+    position: relative;
+    /*arrow때문에 줌*/
+    margin-top: 22px;
+
+}
+
+.header_top_inner {
+    width: calc(100% - 44px);
+    margin: 0 auto;
+    border: 0px solid cyan;
+    position: relative;
+    /*arrow때문에 줌*/
+    margin-top: 22px;
+}
+
+.arrow_wrap {
+    position: absolute;
+    left: 0px;
+}
+
+.logo_wrap {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.moto_logo {
+    position: relative;
+    top: 3px;
+}
+
+/*txt 관련*/
+.heading_txt {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.gray_txt {
+    font-size: 14px;
+    color: #A0AAC6;
+    margin-bottom: 35px;
+}
+
+/*버튼*/
+.btn_wrap {
+    margin-bottom: 22px;
+}
+
+.btn_wrap_inner {
+    margin: 0 auto;
+    border: 0px solid cyan;
+    margin-bottom: 22px;
+    width: calc(100% - 44px);
+}
+
+.allbtn {
+    font-family: 'pretendard';
+    width: calc(100% - 44px);
+    height: 42px;
+    background: #F46036;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: 1px 2px 4px rgb(0 0 0 / 12%);
+    bottom: 0;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 22px;
+}

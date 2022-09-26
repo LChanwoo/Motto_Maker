@@ -6,6 +6,8 @@ import TextInput from './TextInput';
 import style from './scale.module.css';
 import Preview from './preview';
 import Palette2 from './pallet2';
+import { createGlobalStyle } from 'styled-components';
+import '/css/common.css';
 
 const getRandomColor = () => {
   return "#" + Math.floor(Math.random() * 16777215).toString(16);
@@ -37,6 +39,7 @@ function App() {
 
   return (
     <>
+
       <Preview color={color} text={text} userName={userName} href={href} setUrl={setUrl} textColor={textColor} />
       <div>
         <h2>텍스트(줄바꿈 하려면  ,_ 를 입력해주세요)</h2>

@@ -6,6 +6,7 @@ import { JsxElement } from "typescript";
 
 const Preview = ({ color, text, userName, href, updateCanvas, setUrl, textColor }: any) => {
     const componetDidUpdate = () => {
+        console.log(href)
         const canvas = href.current;
         const ctx = canvas.getContext("2d");
         ctx.fillStyle = color;
@@ -26,10 +27,11 @@ const Preview = ({ color, text, userName, href, updateCanvas, setUrl, textColor 
         const ctx2 = canvas.getContext("2d");
         const { color, size, font } = args;
         ctx.font = `${size}px ${font}`;
-        ctx.textAlign = "start";
+        ctx.textAlign = "center";
+        // ctx.textAlign = "start";
         ctx.fillStyle = color;
         for (let i = 0; i < texts.length; i++) {
-            ctx.fillText(texts[i], 50, 100 + 80 * i);
+            ctx.fillText(texts[i], 250, 100 + 80 * i);
         }
         ctx2.font = "normal bolder 30px Arial";
         ctx2.textAlign = "right";
