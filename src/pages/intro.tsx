@@ -1,13 +1,14 @@
 import Header from "../components/header"
 import cstyle from "../css_module/common.module.css"
 import style from "../css_module/intro.module.css"
-import { Swiper, SwiperSlide } from "swiper/react"
+import { Swiper, SwiperSlide, useSwiper } from "swiper/react"
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import { A11y, Autoplay, Navigation, Pagination, Scrollbar } from "swiper";
-const Intro = () => {
+import { useEffect } from "react";
+const Intro = ({ currentSlide }: any) => {
     return (
         <>
             < div className={cstyle.contents} >
@@ -31,7 +32,7 @@ const Intro = () => {
                             loop={true}
                         >
                             <div >
-                                <SwiperSlide>
+                                <SwiperSlide key={0}>
                                     <div className={style.intro_img_wrap}>
                                         <img className={style.intro_img} src="/img/sample1.png" />
                                     </div>
@@ -42,7 +43,7 @@ const Intro = () => {
                                 </SwiperSlide>
                             </div>
                             <div>
-                                <SwiperSlide>
+                                <SwiperSlide key={1}>
                                     <div className={style.intro_img_wrap} >
                                         <img className={style.intro_img} src="/img/sample2.png"></img>
                                     </div>
@@ -53,12 +54,37 @@ const Intro = () => {
                                     </div>
                                 </SwiperSlide>
                             </div>
+                            <SwiperController currentSlide={currentSlide} />
                         </Swiper>
                     </div>
                 </div>
             </div >
+            {/* <div style={{
+                height: "100%",
+                width: "100%",
+                position: "relative",
+                top: 0,
+                left: 0,
+                backgroundColor: "rgba(0,0,0,0.5)",
+                zIndex: 1000,
+                display: "flex",
+            }}>.</div> */}
         </>
 
+    )
+}
+
+const SwiperController = ({ currentSlide }: any) => {
+    const swiper = useSwiper();
+    useEffect(() => {
+        if (currentSlide === 0) {
+            swiper.autoplay.run();
+        } else {
+            swiper.autoplay.pause();
+        }
+    }, [currentSlide])
+    return (
+        <></>
     )
 }
 export default Intro
