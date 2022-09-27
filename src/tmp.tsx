@@ -15,7 +15,7 @@ const getRandomColor = () => {
 
 function TMP() {
     const [color, setColor] = React.useState(getRandomColor());
-    const [text, setText] = React.useState('여기다가,_넣어보자,_명언을,_멋드러지게');
+    const [text, setText] = React.useState('일이삼사오육칠팔구십일이삼사,_일이삼사오육칠팔구십일이삼사,_일이삼사오육칠팔구십일이삼사,_일이삼사오육칠팔구십일이삼사');
     const [userName, setUserName] = React.useState('이름있음');
     const [textColor, setTextColor] = React.useState('#000000');
     const [url, setUrl] = React.useState('');
