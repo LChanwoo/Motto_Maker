@@ -13,7 +13,7 @@ const Preview = ({ color, text, userName, href, updateCanvas, setUrl, textColor 
         ctx.fillRect(0, 0, canvas.width, canvas.height);
         setFont(canvas, text, userName, {
             color: textColor,
-            size: "40",
+            size: "26px",
             font: "Arial"
         });
         setUrl(canvas.toDataURL());

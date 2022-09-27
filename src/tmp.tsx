@@ -6,18 +6,14 @@ import TextInput from './TextInput';
 import style from './scale.module.css';
 import Preview from './preview';
 import Palette2 from './pallet2';
-import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset';
-import '/css/common.css';
-const GlobalStyles = createGlobalStyle`
-    ${reset};
-`;
+
 
 const getRandomColor = () => {
     return "#" + Math.floor(Math.random() * 16777215).toString(16);
 };
 
-function App() {
+function TMP() {
     const [color, setColor] = React.useState(getRandomColor());
     const [text, setText] = React.useState('여기다가,_넣어보자,_명언을,_멋드러지게');
     const [userName, setUserName] = React.useState('이름있음');
@@ -43,8 +39,6 @@ function App() {
 
     return (
         <>
-            ${reset}
-            <GlobalStyles />
             <Preview color={color} text={text} userName={userName} href={href} setUrl={setUrl} textColor={textColor} />
             <div>
                 <h2>텍스트(줄바꿈 하려면  ,_ 를 입력해주세요)</h2>
@@ -67,4 +61,4 @@ function App() {
 
 }
 
-export default App;
+export default TMP;

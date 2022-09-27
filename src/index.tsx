@@ -8,6 +8,7 @@ import { A11y } from 'swiper';
 import Header from './components/header';
 import cstyle from './css_module/common.module.css';
 import style from './css_module/intro.module.css';
+import TMP from './tmp';
 
 
 const root = ReactDOM.createRoot(
@@ -15,7 +16,8 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   // <React.StrictMode>
-  <App />
+  // <App />
+  <TMP />
   // </React.StrictMode>
 );
 

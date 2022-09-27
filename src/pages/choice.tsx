@@ -187,47 +187,16 @@ const Choice = ({ Text1, Text2, Text3, Text4, setText1, setText2, setText3, setT
                             {
                                 Tags.map((el: any, index: any) => {
                                     return (
+
                                         <div className={chstyle.keyword} key={index} onClick={onTagClick}>
                                             {el}
                                         </div>
+
                                     )
                                 })
                             }
                         </SwiperSlide>
                     </Swiper>
-                    {/* <div className={chstyle.optionbox_keyword}>
-                            키워드키워드
-                        </div> */}
-                    {/* <div className={chstyle.optionbox_keyword}>
-                            키워드키워드
-                        </div>
-                        <div className={chstyle.optionbox_keyword}>
-                            키워드키워드
-                        </div>
-                        <div className={chstyle.optionbox_keyword}>
-                            키워드키워드
-                        </div>
-                        <div className={chstyle.optionbox_keyword}>
-                            키워드키워드
-                        </div>
-                        <div className={chstyle.optionbox_keyword}>
-                            키워드키워드
-                        </div>
-                        <div className={chstyle.optionbox_keyword}>
-                            키워드키워드
-                        </div>
-                        <div className={chstyle.optionbox_keyword}>
-                            키워드키워드
-                        </div>
-                        <div className={chstyle.optionbox_keyword}>
-                            키워드키워드
-                        </div>
-                        <div className={chstyle.optionbox_keyword}>
-                            키워드키워드
-                        </div>
-                        <div className={chstyle.optionbox_keyword}>
-                            키워드키워드
-                        </div> */}
                 </div>
             </div>
             {/* </div> */}
