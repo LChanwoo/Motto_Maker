@@ -5,7 +5,7 @@ const NickName = ({ onNameChange, name }: any) => {
     return (
         <div className={cstyle.contents}>
             <div className={cstyle.inner}>
-                <div className="">
+                <div style={{ height: '140px' }}>
                     <h2 className={cstyle.heading_txt}>누구의 좌우명 인가요?</h2>
                     <p className={cstyle.gray_txt}>나만의 닉네임을 만들어 주세요.</p>
                     <div className="nickname_inputwrap">

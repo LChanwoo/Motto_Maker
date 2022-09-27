@@ -52,9 +52,9 @@ const Intro = ({ currentSlide }: any) => {
                                         <h2 className={style.intro_heading_txt2}>나만의 좌우명을 만들어 보세요.</h2>
                                         <p className={cstyle.gray_txt}>내가 만든 좌우명을 친구들에게 공유할 수 있어요.</p>
                                     </div>
+                                    <SwiperController currentSlide={currentSlide} />
                                 </SwiperSlide>
                             </div>
-                            <SwiperController currentSlide={currentSlide} />
                         </Swiper>
                     </div>
                 </div>

@@ -1,3 +1,4 @@
+
 import style from "../css_module/common.module.css"
 function Header({ swiper, currentSlide, setCurrentSlide }: any) {
     const onClick = (e: any) => {
@@ -9,7 +10,7 @@ function Header({ swiper, currentSlide, setCurrentSlide }: any) {
         <div className={style.top}>
             <div className={style.header_top_inner}>
                 <div className={style.arrow_wrap}>
-                    <button onClick={onClick}>
+                    <button onClick={onClick} style={{ background: "none" }}>
                         <img src={`${process.env.PUBLIC_URL}/img/arrow-left.png`} alt="뒤로가기 버튼" />
                     </button>
                 </div>
