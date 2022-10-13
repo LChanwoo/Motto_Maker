@@ -6,7 +6,7 @@ import { JsxElement } from "typescript";
 
 const Preview = ({ color, text, userName, href, updateCanvas, setUrl, textColor }: any) => {
     const componetDidUpdate = () => {
-        console.log(href)
+        // console.log(href)
         const canvas = href.current;
         const ctx = canvas.getContext("2d");
         ctx.fillStyle = color;

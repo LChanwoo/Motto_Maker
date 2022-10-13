@@ -24,7 +24,7 @@ const Intro = ({ currentSlide }: any) => {
                             // scrollbar={{ draggable: true }}
                             allowTouchMove={false}
                             onSwiper={(swiper) => { swiper.width = window.innerWidth >= 650 ? 600 : window.innerWidth; }}
-                            onSlideChange={(e) => { console.log(e) }}
+                            // onSlideChange={(e) => { console.log(e) }}
                             autoplay={{
                                 delay: 3000,
                                 disableOnInteraction: false,

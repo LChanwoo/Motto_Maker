@@ -69,7 +69,7 @@ function App() {
               allowTouchMove={false}
               onSliderMove={(e) => { e.activeIndex = 1; }}
               cssMode={false}
-              onSelect={(e) => { console.log(e) }}
+            // onSelect={(e) => { console.log(e) }}
             // onSwiper={(swiper) => { swiper.width = window.innerWidth >= 650 ? 600 : window.innerWidth; }}
             >
               <SwiperSlide key={0}>

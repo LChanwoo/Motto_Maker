@@ -16,7 +16,7 @@ const Choice = ({ Text1, Text2, Text3, Text4, setText1, setText2, setText3, setT
     const textSelect4 = React.useRef(null);
     const [nowSelected, setNowSelected] = React.useState(textSelect);
     const onSelect = (e: any) => {
-        console.log(textSelect);
+        // console.log(textSelect);
         const t1 = textSelect.current as any
         const t2 = textSelect2.current as any
         const t3 = textSelect3.current as any
@@ -28,18 +28,18 @@ const Choice = ({ Text1, Text2, Text3, Text4, setText1, setText2, setText3, setT
             setNowSelected(textSelect);
             setTags(Tags1);
         } else if (e.currentTarget === textSelect2.current) {
-            console.log('2');
+            // console.log('2');
             setText3('...');
             setText4('...');
             setNowSelected(textSelect2);
             setTags(Tags2_1);
         } else if (e.currentTarget === textSelect3.current) {
-            console.log('3');
+            // console.log('3');
             setText4('...');
             setNowSelected(textSelect3);
             setTags(Tags3_1);
         } else if (e.currentTarget === textSelect4.current) {
-            console.log('4');
+            // console.log('4');
             setNowSelected(textSelect4);
             setTags(Tags4_1);
         }
@@ -59,7 +59,7 @@ const Choice = ({ Text1, Text2, Text3, Text4, setText1, setText2, setText3, setT
         e.target.className = chstyle.current_topicbox
     }
     const onTagClick = (e: any) => {
-        console.log(e.currentTarget.parentNode);
+        // console.log(e.currentTarget.parentNode);
         if (nowSelected.current === textSelect.current) {
             setText1(e.target.innerText);
             setTags(secondTag(e.target.innerText));
@@ -114,7 +114,7 @@ const Choice = ({ Text1, Text2, Text3, Text4, setText1, setText2, setText3, setT
         }
     }
     useEffect(() => {
-        console.log('choice');
+        // console.log('choice');
         const t1 = textSelect.current as any
         const t2 = textSelect2.current as any
         const t3 = textSelect3.current as any
@@ -125,7 +125,7 @@ const Choice = ({ Text1, Text2, Text3, Text4, setText1, setText2, setText3, setT
             t1.className += ' ' + chstyle.done;
             t2.className = '';
             t2.className += chstyle.current_topicbox;
-            console.log(t1.className)
+            // console.log(t1.className)
         }
         if (Text2 !== '...') {
             t2.className = '';
@@ -133,7 +133,7 @@ const Choice = ({ Text1, Text2, Text3, Text4, setText1, setText2, setText3, setT
             t2.className += ' ' + chstyle.done;
             t3.className = '';
             t3.className += chstyle.current_topicbox;
-            console.log(t2.className)
+            // console.log(t2.className)
         }
         if (Text3 !== '...') {
             t3.className = '';
@@ -141,13 +141,13 @@ const Choice = ({ Text1, Text2, Text3, Text4, setText1, setText2, setText3, setT
             t3.className += ' ' + chstyle.done;
             t4.className = '';
             t4.className += chstyle.current_topicbox;
-            console.log(t3.className)
+            // console.log(t3.className)
         }
         if (Text4 !== '...') {
             t4.className = '';
             t4.className += chstyle.topicbox;
             t4.className += ' ' + chstyle.done;
-            console.log(t4.className)
+            // console.log(t4.className)
         }
 
     }, [Tags, Text1, Text2, Text3, Text4])

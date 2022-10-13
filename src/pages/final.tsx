@@ -14,7 +14,7 @@ const Final = ({ color, nickName, Text1, Text2, Text3, Text4, href, setUrl, text
                 el.classList.remove(fstyle.all_bg_active);
                 el.classList.add(fstyle.all_bg_last);
                 if (el == e.currentTarget) {
-                    console.log(el.innerText);
+                    // console.log(el.innerText);
                     setColor(el.innerText);
                     e.target.className += " " + fstyle.all_bg_active
                     return;
@@ -23,7 +23,7 @@ const Final = ({ color, nickName, Text1, Text2, Text3, Text4, href, setUrl, text
                 el.classList.remove(fstyle.all_bg_active);
                 el.classList.add(fstyle.all_bg);
                 if (el == e.currentTarget) {
-                    console.log(el.innerText);
+                    // console.log(el.innerText);
                     setColor(el.innerText);
                     e.target.className += " " + fstyle.all_bg_active
                     return;

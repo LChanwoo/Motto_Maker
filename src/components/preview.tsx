@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import fstyle from "./final.module.css";
 const Preview = ({ color, Text1, Text2, Text3, Text4, nickName, href, setUrl, textColor }: any) => {
     const componetDidUpdate = () => {
-        console.log(href)
+        // console.log(href)
         const canvas = href.current;
         const ctx = canvas.getContext("2d");
         const gradient = ctx.createLinearGradient(0, 0, 0, 546);
