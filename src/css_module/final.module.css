@@ -1,0 +1,289 @@
+/*
+color:
+
+#64D8C3 main
+#272A32 black
+#A0AAC6 gray txt
+#ECF1F8 연한 gray
+
+*/
+
+
+
+
+.final_contents {
+    border: 0px solid green;
+    height: 100%;
+    overflow: hidden;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.final_page .logo_wrap {
+    margin-bottom: 38px;
+}
+
+/*멋진 좌우명이네요*/
+.final_headtxt_wrap {
+    width: calc(100% - 44px);
+    margin: 0 auto;
+    border: 0px solid pink;
+
+}
+
+.final_headtxt {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 26px;
+}
+
+/*최종 좌우명 final_bg*/
+.final_bg {
+    width: calc(100% - 44px);
+    margin: 0 auto;
+    flex-shrink: 0;
+    border: 0px solid blue;
+    height: 323px;
+    border-radius: 5px;
+    background: #F8FAFD;
+    border-radius: 5px;
+    padding: 25px;
+    margin-bottom: 14px;
+}
+
+.final_bg_inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.fianl_logo_wrap {
+    width: 100%;
+    text-align: right;
+}
+
+.final_logo {
+    font-size: 12px;
+    font-weight: bold;
+    font-style: italic;
+    filter: opacity(.5);
+}
+
+.top_wrap {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.fixed_topic {
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: -0.02em;
+    margin-bottom: 17px;
+}
+
+.fixed_nickname {
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: -0.02em;
+    margin-bottom: 7px;
+}
+
+
+/*bg선택*/
+.bg_picker_wrap {
+
+    border: 0px solid cyan;
+    overflow-y: scroll;
+    height: 100%;
+    max-height: 376px;
+    padding: 0 0 22px 0;
+    width: calc(100% - 0px);
+    margin: 0 auto;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    -ms-overflow-style: none;
+    /* 인터넷 익스플로러 */
+    scrollbar-width: none;
+    /* 파이어폭스 */
+}
+
+.bg_picker_wrap::-webkit-scrollbar {
+    display: none;
+    /* 크롬, 사파리, 오페라, 엣지 */
+}
+
+.all_bg {
+    display: inline-block;
+    width: calc(33.3333% - 10px / 3);
+    height: 100px;
+    background-color: gray;
+    font-size: 0;
+    color: transparent;
+    margin: 0 5px 0 0;
+    padding: 0;
+    border-radius: 5px;
+}
+
+.all_bg_last {
+    display: inline-block;
+    width: calc(33.3333% - 10px / 3);
+    height: 100px;
+    background-color: gray;
+    font-size: 0;
+    color: transparent;
+    margin: 0 5px 0 0;
+    padding: 0;
+    border-radius: 5px;
+    margin: 0;
+}
+
+/*----------------------09/27-------------------*/
+.all_bg_active {
+    border: 2px solid #F46036;
+}
+
+.bg1 {
+    background-color: #F8FAFD;
+}
+
+.bg2 {
+    background-color: #fff;
+}
+
+.bg3 {
+    background-color: #9FF5D6;
+}
+
+.bg4 {
+    background-color: #FAD;
+}
+
+.bg5 {
+    background-color: #FBF8AD;
+}
+
+.bg6 {
+    background-color: #B7D5F1;
+}
+
+.bg7 {
+    background-color: #F8A4A4;
+}
+
+.bg8 {
+    background-color: #B4BDCF;
+}
+
+.bg8 {
+    background-color: #B4BDCF;
+}
+
+.bg9 {
+    background-color: #C8B3F6;
+}
+
+.bg10 {
+    background: linear-gradient(180deg, #FFEDBF 0%, #FFCAE3 100%);
+}
+
+.bg11 {
+    background: linear-gradient(180deg, #79cfff7d 0%, #aa7de37d 100%);
+}
+
+.bg12 {
+    background: linear-gradient(180deg, #b9e2ffe0 0%, #c1ffdae0 100%);
+}
+
+/*----------------------09/27-------------------*/
+
+
+
+
+
+
+/*button*/
+.final_btn_wrap {
+    margin: 0 auto;
+    border: 0px solid cyan;
+    margin-bottom: 22px;
+    width: calc(100% - 44px);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .final_btn_wrap::before {
+    content: "";
+    position: absolute;
+    top: -60px;
+    width: 606px;
+    height: 60px;
+    background: linear-gradient(0deg, #ffffff 20%, transparent);
+} */
+
+.final_btn_wrap2 {
+    margin: 0 auto;
+    border: 0px solid cyan;
+    /* margin-bottom: 22px; */
+    width: calc(100% - 0px);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.final_btn_wrap2::before {
+    content: "";
+    position: absolute;
+    top: -70px;
+    width: 606px;
+    height: 70px;
+    background: linear-gradient(0deg, #ffffff 20%, transparent);
+}
+
+.final_reset {
+    font-family: 'pretendard';
+    width: calc(100%);
+    height: 42px;
+    background: #F46036;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: 1px 2px 4px rgb(0 0 0 / 12%);
+    bottom: 0;
+    margin-right: 8px;
+}
+
+@media screen and (max-width: 480px) {
+    .all_bg {
+        height: 70px;
+    }
+
+    .all_bg_last {
+        height: 70px;
+    }
+
+    .bg_picker_wrap {
+        max-height: 248px;
+    }
+
+    .final_bg {
+        height: 208px;
+
+    }
+
+    .fixed_topic {
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: -0.02em;
+        margin-bottom: 15px;
+    }
+}

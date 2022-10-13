@@ -6,6 +6,10 @@ function Header({ swiper, currentSlide, setCurrentSlide }: any) {
         swiper.slidePrev()
         setCurrentSlide(swiper.activeIndex);
     }
+    const onClickReload = (e: any) => {
+        e.preventDefault();
+        window.location.reload();
+    }
     return (
         <div className={style.top}>
             <div className={style.header_top_inner}>
@@ -15,7 +19,7 @@ function Header({ swiper, currentSlide, setCurrentSlide }: any) {
                     </button>
                 </div>
                 <div className={style.logo_wrap}>
-                    <img src={`${process.env.PUBLIC_URL}/img/motto-logo.png`} className={style.moto_logo} alt="모토 로고" />
+                    <img src={`${process.env.PUBLIC_URL}/img/moto_logo_15px.png`} className={style.moto_logo} alt="모토 로고" onClick={onClickReload} />
                 </div>
             </div>
         </div>

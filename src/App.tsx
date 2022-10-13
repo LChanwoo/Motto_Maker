@@ -4,12 +4,14 @@ import './App.css';
 // import '/css/common.css';
 import Header from './components/header';
 import cstyle from './css_module/common.module.css';
+import fstyle from './css_module/final.module.css';
 import istyle from './css_module/intro.module.css';
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
 import Intro from './pages/intro';
 import { A11y } from 'swiper';
 import Choice from './pages/choice';
 import NickName from './pages/nickName';
+import Final from './pages/final';
 
 const getRandomColor = () => {
   return "#" + Math.floor(Math.random() * 16777215).toString(16);
@@ -23,7 +25,7 @@ function App() {
   const [Text2, setText2] = React.useState('...');
   const [Text3, setText3] = React.useState('...');
   const [Text4, setText4] = React.useState('...');
-  const [color, setColor] = React.useState(getRandomColor());
+  const [color, setColor] = React.useState('#FAD');
   const [text, setText] = React.useState('여기다가,_넣어보자,_명언을,_멋드러지게');
   const [textColor, setTextColor] = React.useState('#000000');
   const [url, setUrl] = React.useState('');
@@ -91,7 +93,18 @@ function App() {
                 />
               </SwiperSlide>
               <SwiperSlide key={3}>
-                <div> </div>
+                <Final
+                  color={color}
+                  nickName={nickName}
+                  Text1={Text1}
+                  Text2={Text2}
+                  Text3={Text3}
+                  Text4={Text4}
+                  href={href}
+                  setUrl={setUrl}
+                  textColor={textColor}
+                  setColor={setColor}
+                />
               </SwiperSlide>
             </Swiper>
           </div>
@@ -105,6 +118,7 @@ function App() {
           Text2={Text2}
           Text3={Text3}
           Text4={Text4}
+          url={url}
         />
       </main>
     </>
@@ -112,11 +126,14 @@ function App() {
 
 }
 
-function SlideNextButton({ swiper, setCurrentSlide, nickname, currentSlide, Text1, Text2, Text3, Text4 }: any) {
+function SlideNextButton({ swiper, setCurrentSlide, nickname, currentSlide, Text1, Text2, Text3, Text4, url }: any) {
   // console.log(currentSlide);
   // console.log(swiper)
 
   const [isDisabled, setIsDisabled] = React.useState(false);
+  const onClickReload = () => {
+    window.location.reload();
+  }
   useEffect(() => {
     if (currentSlide === 1 && nickname.length <= 0) {
       return setIsDisabled(true);
@@ -129,6 +146,15 @@ function SlideNextButton({ swiper, setCurrentSlide, nickname, currentSlide, Text
   const onClick = () => {
     setCurrentSlide(swiper.activeIndex + 1);
     swiper.slideNext();
+  }
+  if (currentSlide === 3) {
+    return (
+      <div className={fstyle.final_btn_wrap}>
+        <button type="button" className={fstyle.final_reset} onClick={onClickReload}>다시하기</button>
+        {/* <button type="button" className={cstyle.allbtn}>공유하기</button> */}
+        <a href={url} download={`Mymotto.png`} className={cstyle.allbtn} ><button className={cstyle.allbtn}>다운로드 버튼</button></a>
+      </div>
+    );
   }
 
   return (

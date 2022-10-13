@@ -10,20 +10,7 @@ color:
 
 /*토픽설정 영역*/
 
-@media screen and (max-width: 480px) {
-    .keyword_wrap {
-        padding: 16px 0 26px 0px;
-        padding-bottom: 30px;
-        overflow-y: scroll;
-        max-height: 300px;
-        scrollbar-width: none;
 
-    }
-
-    .choice_inner_second {
-        width: calc(100%px);
-    }
-}
 
 .topic_wrap {
     display: flex;
@@ -122,8 +109,16 @@ color:
     width: 100%;
     padding: 26px 0 36px 0;
     display: flex;
+    overflow: scroll;
+    -ms-overflow-style: none;
 
 }
+
+.keyword_wrap::-webkit-scrollbar {
+    display: none;
+    width: 0 !important;
+}
+
 
 .swiper_line1 {
     margin-bottom: 18px;
@@ -190,4 +185,51 @@ color:
 
 .swiper-slide {
     width: auto;
+}
+
+@media screen and (max-width: 480px) {
+    .keyword_wrap {
+        padding: 16px 0 26px 0px;
+        padding-bottom: 30px;
+        overflow-y: scroll;
+        max-height: 300px;
+        scrollbar-width: none;
+
+    }
+
+    .choice_inner_second {
+        width: calc(100%px);
+    }
+
+    .topicbox {
+        font-size: 16px;
+        height: 36px;
+        line-height: 36px;
+    }
+
+    .topicbox:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    .current_topicbox {
+        font-size: 16px;
+        height: 36px;
+        line-height: 36px;
+    }
+
+    .current_topicbox:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    .keyword {
+        white-space: nowrap;
+        padding: 9px 14px;
+        border-radius: 15px;
+        border: 1px solid #E3E9F0;
+        display: inline-block;
+        margin-right: 7px;
+        margin-top: 5px;
+        font-weight: 600;
+        /* overflow: auto; */
+    }
 }

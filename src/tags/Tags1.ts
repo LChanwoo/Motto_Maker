@@ -15,5 +15,13 @@ export const Tags1_3 = [
     "세련되게",
 ]
 export const Tags1_4 = [
-    ""
+    "test"
 ]
+
+export const Tags1 = () => {
+    let tmpTags = Tags1_1.concat(Tags1_2).concat(Tags1_3).concat(Tags1_4);
+    while (tmpTags.length !== 10) {
+        tmpTags.splice(Math.floor(Math.random() * tmpTags.length), 1);
+    }
+    return tmpTags;
+}

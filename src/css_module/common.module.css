@@ -10,17 +10,6 @@ color:
 
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css');
 
-@media screen and (max-width: 480px) {
-    .contents {
-        max-height: 650px;
-    }
-
-    .inner {
-        width: calc(100% - 44px);
-        overflow-y: scroll;
-    }
-}
-
 
 html,
 body {
@@ -60,6 +49,13 @@ input {
     width: calc(100% - 44px);
     margin: 0 auto;
     border: 0px solid cyan;
+    overflow: scroll;
+    -ms-overflow-style: none;
+}
+
+.inner::-webkit-scrollbar {
+    display: none;
+    width: 0 !important;
 }
 
 .flex {
@@ -105,7 +101,7 @@ input {
 
 .logo_wrap {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 38px;
 }
 
 .moto_logo {
@@ -156,4 +152,20 @@ input {
     margin-left: 20px; */
     /* margin-bottom: 22px; */
     /* position: absolute; */
+}
+
+
+@media screen and (max-width: 480px) {
+    .contents {
+        max-height: 650px;
+    }
+
+    .inner {
+        width: calc(100% - 44px);
+        overflow-y: scroll;
+    }
+
+    .logo_wrap {
+        margin-bottom: 30px;
+    }
 }
