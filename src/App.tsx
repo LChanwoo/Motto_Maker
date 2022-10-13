@@ -152,7 +152,7 @@ function SlideNextButton({ swiper, setCurrentSlide, nickname, currentSlide, Text
       <div className={fstyle.final_btn_wrap}>
         <button type="button" className={fstyle.final_reset} onClick={onClickReload}>다시하기</button>
         {/* <button type="button" className={cstyle.allbtn}>공유하기</button> */}
-        <a href={url} download={`Mymotto.png`} className={cstyle.allbtn} ><button className={cstyle.allbtn}>다운로드 버튼</button></a>
+        <a href={url} download={`Mymotto.png`} className={cstyle.allbtn} ><button className={cstyle.allbtn}>다운로드</button></a>
       </div>
     );
   }

@@ -1,8 +1,5 @@
 import fstyle from '../css_module/final.module.css'
-import React, { useEffect } from 'react';
-import cstyle from '../css_module/common.module.css';
-
-import { Swiper, SwiperSlide } from 'swiper/react';
+import React from 'react';
 import Preview from '../components/preview';
 const Final = ({ color, nickName, Text1, Text2, Text3, Text4, href, setUrl, textColor, setColor }: any) => {
     // const [currentBg, setCurrentBg] = React.useState(null);

@@ -70,7 +70,9 @@ const Preview = ({ color, Text1, Text2, Text3, Text4, nickName, href, setUrl, te
     }, [color, Text1, Text2, Text3, Text4, nickName, textColor]);
 
     return (
+        // <div className={fstyle.motto_canvas}>
         <canvas ref={href} width="1024" height="546" />
+        // </div >
     );
 }
 
