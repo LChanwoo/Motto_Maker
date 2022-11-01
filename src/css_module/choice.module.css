@@ -27,8 +27,7 @@ color:
 }
 
 .choice_inner_second {
-    width: calc(100% - 44px);
-    margin: 0 auto;
+     margin: 0 auto;
     border: 0px solid cyan;
     font-size: 20px;
     font-weight: 700;
@@ -189,22 +188,23 @@ color:
 
 @media screen and (max-width: 480px) {
     .keyword_wrap {
-        padding: 16px 0 26px 0px;
         padding-bottom: 30px;
         overflow-y: scroll;
-        max-height: 300px;
         scrollbar-width: none;
-
+        height: 250px;
+        overflow: hidden;
     }
 
     .choice_inner_second {
-        width: calc(100%px);
+        width: 100%;
     }
 
     .topicbox {
         font-size: 16px;
+        /*
         height: 36px;
         line-height: 36px;
+        */
     }
 
     .topicbox:not(:last-child) {
@@ -213,8 +213,10 @@ color:
 
     .current_topicbox {
         font-size: 16px;
+        /*
         height: 36px;
         line-height: 36px;
+        */
     }
 
     .current_topicbox:not(:last-child) {
@@ -228,7 +230,7 @@ color:
         border: 1px solid #E3E9F0;
         display: inline-block;
         margin-right: 7px;
-        margin-top: 5px;
+        margin-top: 10px;
         font-weight: 600;
         /* overflow: auto; */
     }
