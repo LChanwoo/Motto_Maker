@@ -71,8 +71,8 @@ color:
     background-color: #fff;
     border-radius: 8px;
     border: 2px solid #F46036;
-    box-shadow: 2px 3px 5px rgba(100, 216, 195, 0.4);
-    color: #F46036;
+    box-shadow: 2px 3px 5px rgb(0 0 0 / 9%);
+    color: #f45f36;
     font-size: 19px;
     font-weight: bold;
     height: 55px;
