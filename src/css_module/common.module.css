@@ -99,6 +99,10 @@ input {
 .arrow_wrap {
     position: absolute;
     left: 0px;
+    width: 9px;
+}
+.arrow_wrap img {
+    width: 100%;
 }
 
 .logo_wrap {
@@ -107,6 +111,7 @@ input {
 }
 
 .moto_logo {
+    width: 62px;
     position: relative;
     top: 3px;
 }
@@ -122,6 +127,8 @@ input {
     font-size: 14px;
     color: #A0AAC6;
     margin-bottom: 35px;
+    font-weight: 400;
+    
 }
 
 /*버튼*/
@@ -139,6 +146,7 @@ input {
     width: 100%;
     padding: 0 22px;
     max-width: 650px;
+    z-index: 999;
 }
 
 .allbtn {

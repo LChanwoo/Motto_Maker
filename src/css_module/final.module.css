@@ -214,10 +214,14 @@ color:
     margin: 0 auto;
     border: 0px solid cyan;
     margin-bottom: 22px;
-    width: calc(100% - 44px);
-    position: relative;
-    display: flex;
+                                                     display: flex;
     justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 0 22px;
+    max-width: 650px;
+    z-index: 999;
 }
 
 /* .final_btn_wrap::before {
@@ -242,9 +246,9 @@ color:
 .final_btn_wrap2::before {
     content: "";
     position: absolute;
-    top: -25px;
+    bottom: 9px;
     width: 606px;
-    height: 70px;
+    height: 21px;
     background: linear-gradient(0deg, #ffffff 20%, transparent);
 }
 
@@ -276,7 +280,7 @@ color:
     }
 
     .bg_picker_wrap {
-        max-height: 308px;
+        max-height:255px;
     }
 
     .final_bg {
