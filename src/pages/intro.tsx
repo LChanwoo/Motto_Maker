@@ -16,7 +16,7 @@ const Intro = ({ currentSlide }: any) => {
                     <div className={style.slides}>
                         <Swiper
                             modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-                            spaceBetween={0}
+                            spaceBetween={100}
                             slidesPerView={1}
                             centeredSlides={true}
                             // navigation

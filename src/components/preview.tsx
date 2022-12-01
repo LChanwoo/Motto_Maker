@@ -27,7 +27,7 @@ const Preview = ({ color, Text1, Text2, Text3, Text4, nickName, href, setUrl, te
         //로고
         const ctx3 = canvas.getContext("2d");
         const logo = new Image();
-        logo.src = `${process.env.PUBLIC_URL}/img/moto_logo_10px.png`;
+        logo.src = `${process.env.PUBLIC_URL}/img/logo_124.png`;
         ctx3.drawImage(logo, (512 - 80) * 2, 25 * 2, 112, 28);
 
         const texts = [Text1, Text2, Text3, Text4];
@@ -35,7 +35,7 @@ const Preview = ({ color, Text1, Text2, Text3, Text4, nickName, href, setUrl, te
             // color: textColor,
             color: "#272A32",
             size: "50",
-            font: "sans-serif"
+            font: "Pretendard"
         });
         setUrl(canvas.toDataURL());
 
@@ -43,7 +43,7 @@ const Preview = ({ color, Text1, Text2, Text3, Text4, nickName, href, setUrl, te
     const setFont = (canvas: any, texts: string[], nickName: string, args: any) => {
         //폰트 옵션
         canvas.style.letterSpacing = -0.2 + "em";
-
+        canvas.style.borderRadius = 6 + "px";
         // 텍스트
         const ctx = canvas.getContext("2d");
         const { color, size, font } = args;
@@ -57,7 +57,7 @@ const Preview = ({ color, Text1, Text2, Text3, Text4, nickName, href, setUrl, te
 
         //유저 닉네임
         const ctx2 = canvas.getContext("2d");
-        ctx2.font = "32px sans-serif";
+        ctx2.font = "32px Pretendard";
         ctx2.textAlign = "center";
         ctx2.fillStyle = "#272A32";
         ctx2.fillText(`- ${nickName} -`, 256 * 2, 250 * 2);

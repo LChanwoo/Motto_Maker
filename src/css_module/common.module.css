@@ -173,7 +173,7 @@ input {
     }
 
     .inner {
-        width: calc(100% - 44px);
+        width: calc(100% - 22px);
         overflow-y: scroll;
     }
 

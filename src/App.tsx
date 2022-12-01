@@ -25,7 +25,7 @@ function App() {
   const [Text2, setText2] = React.useState('...');
   const [Text3, setText3] = React.useState('...');
   const [Text4, setText4] = React.useState('...');
-  const [color, setColor] = React.useState('#FAD');
+  const [color, setColor] = React.useState('#f8fafd');
   const [text, setText] = React.useState('여기다가,_넣어보자,_명언을,_멋드러지게');
   const [textColor, setTextColor] = React.useState('#000000');
   const [url, setUrl] = React.useState('');
