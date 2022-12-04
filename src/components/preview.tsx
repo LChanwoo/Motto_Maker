@@ -42,7 +42,7 @@ const Preview = ({ color, Text1, Text2, Text3, Text4, nickName, href, setUrl, te
     }
     const setFont = (canvas: any, texts: string[], nickName: string, args: any) => {
         //폰트 옵션
-        canvas.style.letterSpacing = -0.2 + "em";
+        canvas.style.letterSpacing = 0 + "em";
         canvas.style.borderRadius = 6 + "px";
         // 텍스트
         const ctx = canvas.getContext("2d");
