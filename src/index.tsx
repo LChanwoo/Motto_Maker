@@ -2,13 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Intro from './pages/intro';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { A11y } from 'swiper';
-import Header from './components/header';
-import cstyle from './css_module/common.module.css';
-import style from './css_module/intro.module.css';
-import TMP from './tmp';
+
 
 
 const root = ReactDOM.createRoot(

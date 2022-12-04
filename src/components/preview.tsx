@@ -49,7 +49,6 @@ const Preview = ({ color, Text1, Text2, Text3, Text4, nickName, href, setUrl, te
         const { color, size, font } = args;
         ctx.font = `bold ${size}px ${font}`;
         ctx.textAlign = "center";
-        // ctx.textAlign = "start";
         ctx.fillStyle = color;
         for (let i = 0; i < texts.length; i++) {
             ctx.fillText(texts[i], 256 * 2, (85 + 39 * i) * 2);
@@ -70,9 +69,7 @@ const Preview = ({ color, Text1, Text2, Text3, Text4, nickName, href, setUrl, te
     }, [color, Text1, Text2, Text3, Text4, nickName, textColor]);
 
     return (
-        // <div className={fstyle.motto_canvas}>
         <canvas ref={href} width="1024" height="546" />
-        // </div >
     );
 }
 
