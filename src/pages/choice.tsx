@@ -7,7 +7,7 @@ import { Tags3_1 } from '../tags/Tags3';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { A11y } from 'swiper';
 import { Tags4_1 } from '../tags/Tags4';
-import { secondTag } from '../tags/nextTagFinder';
+import { finalTag, secondTag, thirdTag } from '../tags/nextTagFinder';
 const Choice = ({ Text1, Text2, Text3, Text4, setText1, setText2, setText3, setText4 }: any) => {
     const [Tags, setTags] = React.useState(Tags1);
     const textSelect = React.useRef(null);
@@ -66,11 +66,11 @@ const Choice = ({ Text1, Text2, Text3, Text4, setText1, setText2, setText3, setT
             setNowSelected(textSelect2);
         } else if (nowSelected.current === textSelect2.current) {
             setText2(e.target.innerText);
-            setTags(Tags3_1);
+            setTags(thirdTag(e.target.innerText));
             setNowSelected(textSelect3);
         } else if (nowSelected.current === textSelect3.current) {
             setText3(e.target.innerText);
-            setTags(Tags4_1);
+            setTags(finalTag(e.target.innerText));
             setNowSelected(textSelect4);
         } else if (nowSelected.current === textSelect4.current) {
             setText4(e.target.innerText);
