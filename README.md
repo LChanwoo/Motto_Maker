@@ -1,46 +1,100 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 명언만들기 프로젝트
+주소 : https://motto-maker.vercel.app/
 
-## Available Scripts
+git 주소 : https://github.com/LChanwoo/Motto_Maker
 
-In the project directory, you can run:
 
-### `npm start`
+## 명언만들기 프로젝트 소개
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+명언만들기 프로젝트는 사용자가 원하는 문장을 선택하여 명언을 만드는 프로젝트입니다.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 명언만들기 프로젝트 개발기간
 
-### `npm test`
+2022.08.26 ~ 2023.01.13
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## 팀원
+`기획자` 홍효림
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+`디자인` 송지민, 차예린
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+`개발자` 이찬우
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## 명언만들기 프로젝트 기능
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+명언만들기 프로젝트는 다음과 같은 기능을 가지고 있습니다.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+ - 문장을 랜덤 또는 직접 선택하여 이미지파일 명언을 만듭니다.
+ - 작성된 명언 이미지 파일을 저장할 수 있습니다.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## 명언만들기 프로젝트 사용 기술
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+ - react
 
-## Learn More
+ - swiper
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+ - typescript
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+ - css module
+
+## 명언만들기 프로젝트 개발 환경
+
+ - vscode
+
+ - git
+
+ - github
+
+ - vercel
+
+ - figma
+
+ - notion
+
+ - slack
+
+
+## 명언만들기 프로젝트 구조
+
+명언만들기 프로젝트는 다음과 같은 구조를 가지고 있습니다.
+```
+📦src
+ ┣ 📂components
+ ┃ ┣ 📜header.tsx
+ ┃ ┗ 📜preview.tsx
+ ┣ 📂css_module
+ ┃ ┣ 📜choice.module.css
+ ┃ ┣ 📜common.module.css
+ ┃ ┣ 📜final.module.css
+ ┃ ┣ 📜intro.module.css
+ ┃ ┗ 📜nickname.module.css
+ ┣ 📂img
+ ┃ ┣ 📜arrow-left.png
+ ┃ ┣ 📜arrow.png
+ ┃ ┣ 📜logo_124.png
+ ┃ ┗ 📜moto_logo_15px.png
+ ┣ 📂pages
+ ┃ ┣ 📜choice.tsx
+ ┃ ┣ 📜final.tsx
+ ┃ ┣ 📜intro.tsx
+ ┃ ┗ 📜nickName.tsx
+ ┣ 📂tags
+ ┃ ┣ 📜Tags1.ts
+ ┃ ┣ 📜Tags2.ts
+ ┃ ┣ 📜Tags3.ts
+ ┃ ┣ 📜Tags4.ts
+ ┃ ┗ 📜nextTagFinder.ts
+ ┣ 📜.DS_Store
+ ┣ 📜App.css
+ ┣ 📜App.test.tsx
+ ┣ 📜App.tsx
+ ┣ 📜TextInput.tsx
+ ┣ 📜index.css
+ ┣ 📜index.tsx
+ ┣ 📜react-app-env.d.ts
+ ┣ 📜reportWebVitals.ts
+ ┣ 📜scale.module.css
+ ┗ 📜setupTests.ts
+ ```
