@@ -62,7 +62,7 @@ const Choice = ({ Text1, Text2, Text3, Text4, setText1, setText2, setText3, setT
         // console.log(e.currentTarget.parentNode);
         if (nowSelected.current === textSelect.current) {
             setText1(e.target.innerText);
-            setTags(secondTag(e.target.innerText));
+            setTags(secondTag(e.target.innerText)!);
             setNowSelected(textSelect2);
         } else if (nowSelected.current === textSelect2.current) {
             setText2(e.target.innerText);

@@ -10,16 +10,26 @@ export const Tags1_2 = [//
     "낭낭하게 살자",
     "넉넉하게 살자",
 ]
-export const Tags1_3 = [
-    "센스있게",
-    "세련되게",
-]
+
 export const Tags1_4 = [
     "test"
 ]
 
+export const Tags1_10 = [
+    "센스있게",
+    "세련되게",
+    "앙칼지게",
+    "구슬프게",
+    "포근하게",
+    "편안하게",
+    "정숙하게",
+    "차분하게",
+    "엣지있게",
+    "조용하게",
+]
+
 export const Tags1 = () => {
-    let tmpTags = Tags1_1.concat(Tags1_2).concat(Tags1_3).concat(Tags1_4);
+    let tmpTags = Tags1_1.concat(Tags1_2).concat(Tags1_10).concat(Tags1_4);
     while (tmpTags.length !== 10) {
         tmpTags.splice(Math.floor(Math.random() * tmpTags.length), 1);
     }
