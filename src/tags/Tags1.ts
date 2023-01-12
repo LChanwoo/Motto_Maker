@@ -27,9 +27,24 @@ export const Tags1_10 = [
     "엣지있게",
     "조용하게",
 ]
+export const Tags1_11 = [
+    "바람아 불어라",
+    "폭풍아 쳐라",
+    "눈아 내려라",
+    "비아 내려라",
+    "벼락아 떨어져라",
+    "우박아 떨어져라",
+    "운석아 떨어져라",
+    "화산아 터져라",
+    "불꽃아 불어라",
+    "폭설이여 내려라",
+    "눈보라여 쳐라",
+    "유성아 쏟아져라",
+
+]
 
 export const Tags1 = () => {
-    let tmpTags = Tags1_1.concat(Tags1_2).concat(Tags1_10).concat(Tags1_4);
+    let tmpTags = Tags1_1.concat(Tags1_2).concat(Tags1_10).concat(Tags1_4).concat(Tags1_11);
     while (tmpTags.length !== 10) {
         tmpTags.splice(Math.floor(Math.random() * tmpTags.length), 1);
     }
