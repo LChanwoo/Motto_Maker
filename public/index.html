@@ -28,7 +28,7 @@
   </style>
   <script type="text/javascript">
     // <![CDATA[
-    var colours=new Array("#ccffff", "#ccffff", "#ccffff", "#ccffff", "#ffffff"); // colours for top, right, bottom and left borders and background of bubbles
+    var colours=new Array("#ff9933", "#ff9933", "#ff9933", "#ff9933", "#ffffff"); // colours for top, right, bottom and left borders and background of bubbles
     var bubbles=166; // maximum number of bubbles on screen
     var over_or_under="over"; // set to "over" for bubbles to always be on top, or "under" to allow them to float behind other objects
     
@@ -70,10 +70,10 @@
         div=createDiv("auto", "auto");
         rats.appendChild(div);
         div=div.style;
-        div.top="-1px";
+        div.top="0px";
         div.left="0px";
         div.bottom="0px";
-        div.right="-1px";
+        div.right="0px";
         div.borderLeft="1px solid "+colours[3];
         div.borderRight="1px solid "+colours[1];
     
@@ -96,7 +96,7 @@
         div.top="1px";
         div.backgroundColor=colours[4];
         if (navigator.appName=="Microsoft Internet Explorer") div.filter="alpha(opacity=50)";
-        else div.opacity=0.9;
+        else div.opacity=0.5;
         document.body.appendChild(rats);
         bubb[i]=rats.style;
       }
