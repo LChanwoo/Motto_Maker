@@ -62,7 +62,7 @@ const Choice = ({ Text1, Text2, Text3, Text4, setText1, setText2, setText3, setT
         // console.log(e.currentTarget.parentNode);
         if (nowSelected.current === textSelect.current) {
             setText1(e.target.innerText);
-            setTags(secondTag(e.target.innerText)!);
+            setTags(secondTag(e.target.innerText));
             setNowSelected(textSelect2);
         } else if (nowSelected.current === textSelect2.current) {
             setText2(e.target.innerText);
@@ -97,20 +97,21 @@ const Choice = ({ Text1, Text2, Text3, Text4, setText1, setText2, setText3, setT
         setTags(Tags1);
     }
     const randomchoice = (e: any) => {
+        const random =Tags[Math.floor(Math.random() * Tags.length)]
         if (nowSelected.current === textSelect.current) {
-            setText1(Tags[Math.floor(Math.random() * Tags.length)]);
-            setTags(Tags2_1);
+            setText1(random);
+            setTags(secondTag(random));
             setNowSelected(textSelect2);
         } else if (nowSelected.current === textSelect2.current) {
-            setText2(Tags[Math.floor(Math.random() * Tags.length)]);
-            setTags(Tags3_1);
+            setText2(random);
+            setTags(thirdTag(random));
             setNowSelected(textSelect3);
         } else if (nowSelected.current === textSelect3.current) {
-            setText3(Tags[Math.floor(Math.random() * Tags.length)]);
-            setTags(Tags4_1);
+            setText3(random);
+            setTags(finalTag(random));
             setNowSelected(textSelect4);
         } else if (nowSelected.current === textSelect4.current) {
-            setText4(Tags[Math.floor(Math.random() * Tags.length)]);
+            setText4(random);
         }
     }
     useEffect(() => {
