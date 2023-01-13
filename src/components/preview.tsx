@@ -18,6 +18,18 @@ const Preview = ({ color, Text1, Text2, Text3, Text4, nickName, href, setUrl, te
             gradient.addColorStop(0, '#b9e2ff')
             gradient.addColorStop(1, '#c1ffc1')
             ctx.fillStyle = gradient;
+        } else if (color === '#000004') {
+            gradient.addColorStop(0, '#FF90BF')
+            gradient.addColorStop(1, '#FFCAE3')
+            ctx.fillStyle = gradient;
+        } else if (color === '#000005') {
+            gradient.addColorStop(0, '#b9e2d0')
+            gradient.addColorStop(0.9, '#C8B3F6')
+            ctx.fillStyle = gradient;
+        } else if (color === '#000006') {
+            gradient.addColorStop(0, '#FFCAE3')
+            gradient.addColorStop(1, '#c1ffc1')
+            ctx.fillStyle = gradient;
         } else {
             ctx.fillStyle = color;
         }

@@ -2,7 +2,6 @@ import fstyle from '../css_module/final.module.css'
 import React from 'react';
 import Preview from '../components/preview';
 const Final = ({ color, nickName, Text1, Text2, Text3, Text4, href, setUrl, textColor, setColor }: any) => {
-    // const [currentBg, setCurrentBg] = React.useState(null);
     const currentBg = React.useRef(null);
 
     const onClickBg = (e: any) => {
@@ -11,7 +10,6 @@ const Final = ({ color, nickName, Text1, Text2, Text3, Text4, href, setUrl, text
                 el.classList.remove(fstyle.all_bg_active);
                 el.classList.add(fstyle.all_bg_last);
                 if (el == e.currentTarget) {
-                    // console.log(el.innerText);
                     setColor(el.innerText);
                     e.target.className += " " + fstyle.all_bg_active
                     return;
@@ -20,16 +18,11 @@ const Final = ({ color, nickName, Text1, Text2, Text3, Text4, href, setUrl, text
                 el.classList.remove(fstyle.all_bg_active);
                 el.classList.add(fstyle.all_bg);
                 if (el == e.currentTarget) {
-                    // console.log(el.innerText);
                     setColor(el.innerText);
                     e.target.className += " " + fstyle.all_bg_active
                     return;
                 }
             }
-            // console.log(el.innerText)
-            // console.log( index)
-
-
         });
     }
     return (
@@ -41,18 +34,6 @@ const Final = ({ color, nickName, Text1, Text2, Text3, Text4, href, setUrl, text
                     </div>
                 </div>
                 <Preview color={color} Text1={Text1} Text2={Text2} Text3={Text3} Text4={Text4} nickName={nickName} href={href} setUrl={setUrl} textColor={textColor} />
-                {/* <div className={fstyle.fianl_logo_wrap}>
-                            <img src={`${process.env.PUBLIC_URL}/img/moto_logo_15px.png`} className="final_logo" alt="모토 로고" />
-                        </div>
-                        <div className={fstyle.top_wrap}>
-                            <span className={fstyle.fixed_topic}>
-                                <span className="">{Text1}</span> 살자
-                            </span>
-                            <span className={fstyle.fixed_topic}>{Text2}</span>
-                            <span className={fstyle.fixed_topic}>{Text3}</span>
-                            <span className={fstyle.fixed_topic}>{Text4}</span>
-                        </div>
-                        <div className={fstyle.fixed_nickname}>- <span>{nickName}</span> -</div> */}
 
                 <div className={fstyle.bg_picker_wrap}>
                     <div className="bg_test">
@@ -69,6 +50,9 @@ const Final = ({ color, nickName, Text1, Text2, Text3, Text4, href, setUrl, text
                             <div className={fstyle.all_bg} id="bg10" style={{ background: 'linear-gradient(180deg, #FFEDBF 0%, #FFCAE3 100%)' }} onClick={onClickBg}>#000001</div>
                             <div className={fstyle.all_bg} id="bg11" style={{ background: 'linear-gradient(180deg, #79cfff7d 0%, #aa7de37d 100%)' }} onClick={onClickBg}>#000002</div>
                             <div className={fstyle.all_bg_last} id="bg12" style={{ background: 'linear-gradient(180deg, #b9e2ffe0 0%, #c1ffdae0 100%)' }} onClick={onClickBg}>#000003</div>
+                            <div className={fstyle.all_bg} id="bg13" style={{ background: 'linear-gradient(180deg, #FF90BF 0%, #FFCAE3 100%)' }} onClick={onClickBg}>#000004</div>
+                            <div className={fstyle.all_bg} id="bg14" style={{ background: 'linear-gradient(180deg, #b9e2d0 0%, #C8B3F6 100%)' }} onClick={onClickBg}>#000005</div>
+                            <div className={fstyle.all_bg_last} id="bg15" style={{ background: 'linear-gradient(180deg, #FFCAE3 0%, #c1ffc1 100%)' }} onClick={onClickBg}>#000006</div>
                         </div>
                     </div>
                 </div>

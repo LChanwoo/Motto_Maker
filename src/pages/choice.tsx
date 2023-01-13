@@ -5,7 +5,6 @@ import { Tags1 } from '../tags/Tags1';
 import { Tags2_1 } from '../tags/Tags2';
 import { Tags3_1 } from '../tags/Tags3';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { A11y } from 'swiper';
 import { Tags4_1 } from '../tags/Tags4';
 import { finalTag, secondTag, thirdTag } from '../tags/nextTagFinder';
 const Choice = ({ Text1, Text2, Text3, Text4, setText1, setText2, setText3, setText4 }: any) => {
@@ -17,10 +16,10 @@ const Choice = ({ Text1, Text2, Text3, Text4, setText1, setText2, setText3, setT
     const [nowSelected, setNowSelected] = React.useState(textSelect);
     const onSelect = (e: any) => {
         // console.log(textSelect);
-        const t1 = textSelect.current as any
-        const t2 = textSelect2.current as any
-        const t3 = textSelect3.current as any
-        const t4 = textSelect4.current as any
+        // const t1 = textSelect.current as any
+        // const t2 = textSelect2.current as any
+        // const t3 = textSelect3.current as any
+        // const t4 = textSelect4.current as any
         if (e.currentTarget === textSelect.current) {
             setText2('...');
             setText3('...');
