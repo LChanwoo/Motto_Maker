@@ -14,44 +14,7 @@ const Choice = ({ Text1, Text2, Text3, Text4, setText1, setText2, setText3, setT
     const textSelect3 = React.useRef(null);
     const textSelect4 = React.useRef(null);
     const [nowSelected, setNowSelected] = React.useState(textSelect);
-    // const onSelect = (e: any) => {
-    //     if (e.currentTarget === textSelect.current) {
-    //         setText2('...');
-    //         setText3('...');
-    //         setText4('...');
-    //         setNowSelected(textSelect);
-    //         setTags(Tags1);
-    //     } else if (e.currentTarget === textSelect2.current) {
-    //         // console.log('2');
-    //         setText3('...');
-    //         setText4('...');
-    //         setNowSelected(textSelect2);
-    //         setTags(Tags2_1);
-    //     } else if (e.currentTarget === textSelect3.current) {
-    //         // console.log('3');
-    //         setText4('...');
-    //         setNowSelected(textSelect3);
-    //         setTags(Tags3_1);
-    //     } else if (e.currentTarget === textSelect4.current) {
-    //         // console.log('4');
-    //         setNowSelected(textSelect4);
-    //         setTags(Tags4_1);
-    //     }
 
-    //     e.currentTarget.parentNode.childNodes.forEach((el: any, index: any) => {
-    //         el.classList.remove(chstyle.current_topicbox);
-
-    //         el.classList.add(chstyle.topicbox);
-    //         // console.log(el.innerText)
-    //         // console.log( index)
-    //         if (el == e.currentTarget) {
-    //             // console.log('this')
-    //         }
-
-
-    //     });
-    //     e.target.className = chstyle.current_topicbox
-    // }
     const onTagClick = (e: any) => {
         // console.log(e.currentTarget.parentNode);
         if (nowSelected.current === textSelect.current) {

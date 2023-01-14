@@ -19,12 +19,8 @@ const Intro = ({ currentSlide }: any) => {
                             spaceBetween={100}
                             slidesPerView={1}
                             centeredSlides={true}
-                            // navigation
-                            // pagination={{ clickable: true }}
-                            // scrollbar={{ draggable: true }}
                             allowTouchMove={false}
                             onSwiper={(swiper) => { swiper.width = window.innerWidth >= 650 ? 600 : window.innerWidth; }}
-                            // onSlideChange={(e) => { console.log(e) }}
                             autoplay={{
                                 delay: 3000,
                                 disableOnInteraction: false,
@@ -59,16 +55,6 @@ const Intro = ({ currentSlide }: any) => {
                     </div>
                 </div>
             </div >
-            {/* <div style={{
-                height: "100%",
-                width: "100%",
-                position: "relative",
-                top: 0,
-                left: 0,
-                backgroundColor: "rgba(0,0,0,0.5)",
-                zIndex: 1000,
-                display: "flex",
-            }}>.</div> */}
         </>
 
     )
