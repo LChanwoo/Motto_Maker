@@ -6,22 +6,16 @@ const Final = ({ color, nickName, Text1, Text2, Text3, Text4, href, setUrl, text
 
     const onClickBg = (e: any) => {
         e.currentTarget.parentNode.childNodes.forEach((el: any, index: any) => {
+            el.classList.remove(fstyle.all_bg_active);
             if (index >= 2 && (index + 1) % 3 == 0) {
-                el.classList.remove(fstyle.all_bg_active);
                 el.classList.add(fstyle.all_bg_last);
-                if (el == e.currentTarget) {
-                    setColor(el.innerText);
-                    e.target.className += " " + fstyle.all_bg_active
-                    return;
-                }
             } else {
-                el.classList.remove(fstyle.all_bg_active);
                 el.classList.add(fstyle.all_bg);
-                if (el == e.currentTarget) {
-                    setColor(el.innerText);
-                    e.target.className += " " + fstyle.all_bg_active
-                    return;
-                }
+            }
+            if (el == e.currentTarget) {
+                setColor(el.innerText);
+                e.target.className += " " + fstyle.all_bg_active
+                return;
             }
         });
     }
