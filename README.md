@@ -98,3 +98,6 @@ git 주소 : https://github.com/LChanwoo/Motto_Maker
  ┣ 📜scale.module.css
  ┗ 📜setupTests.ts
  ```
+---
+ 도움을 준사람
+ - 서명인 : instagram.com/seomyungin

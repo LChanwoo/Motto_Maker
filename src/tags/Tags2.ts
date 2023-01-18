@@ -185,10 +185,17 @@ export const Tags2_17 : string[]= [
 
 ]
 export const Tags2_18 : string[]= [ 
+    "이제는 지나가 버린",
+    "이제는 돌아오지 않는",
+    "이제는 끝난",
+    "이제는 볼 수 없는",
+    "이제는 느낄 수 없는",
+    "이제는 알 수 없는",
+    "이제는 사라져 버린",
 
 ]
 export const Tags2_19 : string[]= [ 
-
+    "추억은 항상 미련을 부르지만",
 ]
 
 export const Tags2_20 : string[]= [ 

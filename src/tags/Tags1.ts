@@ -71,9 +71,11 @@ export const Tags1_17: string[] = [
 ]
 
 export const Tags1_18 : string[]= [
+    "안녕!"
 ]
 
 export const Tags1_19 : string[]= [
+    "사랑했어요"
 ]
 
 export const Tags1_20: string[] = [
