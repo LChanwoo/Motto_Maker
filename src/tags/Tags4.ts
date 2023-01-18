@@ -199,7 +199,7 @@ export const Tags4_19 : string[]= [
 
 ]
 export const Tags4_20 : string[]= [ 
-    "희망이란 및이 있네",
+    "희망이란 빛이 있네",
     "행복이란 빛이 있네",
     "행복만을 빌어주자",
     "춤을춰주자",
