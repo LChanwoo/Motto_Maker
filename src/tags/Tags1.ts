@@ -79,6 +79,7 @@ export const Tags1_19 : string[]= [
 ]
 
 export const Tags1_20: string[] = [
+    "행복을 허상이라 말하는",
 ]
 
 
