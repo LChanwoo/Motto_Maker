@@ -61,9 +61,13 @@ export const Tags1_15 = [
 ]
 
 export const Tags1_16 : string[] = [
+    "기분이 이상해지도록",
+    "기분이 좋아지도록",
+    "기분이 나쁘지 않도록",
 ]
 
 export const Tags1_17: string[] = [
+    "끝날때까지 끝나지 않기에"
 ]
 
 export const Tags1_18 : string[]= [
