@@ -44,9 +44,42 @@ export const Tags1_11 = [
     "폭죽아 터져라",
 
 ]
+export const Tags1_12 = [
+    "혁명적으로",
+    "혁신적으로",
+    "급진적으로",
+]
+export const Tags1_13 = [
+    "파티는 끝났지만",
+    "회의는 끝났지만"
+]
+export const Tags1_14 = [
+    "온 힘을 다해",
+]
+export const Tags1_15 = [
+    "눈물을 참으며"
+]
+
+export const Tags1_16 : string[] = [
+]
+
+export const Tags1_17: string[] = [
+]
+
+export const Tags1_18 : string[]= [
+]
+
+export const Tags1_19 : string[]= [
+]
+
+export const Tags1_20: string[] = [
+]
+
 
 export const Tags1 = () => {
-    let tmpTags = Tags1_1.concat(Tags1_2).concat(Tags1_10).concat(Tags1_11);
+    let tmpTags = Tags1_1.concat(Tags1_2).concat(Tags1_10).concat(Tags1_11).concat(Tags1_12)
+    .concat(Tags1_13).concat(Tags1_14).concat(Tags1_15).concat(Tags1_16).concat(Tags1_17).concat(Tags1_18)
+    .concat(Tags1_19).concat(Tags1_20);
     while (tmpTags.length >15) {
         tmpTags.splice(Math.floor(Math.random() * tmpTags.length), 1);
     }
