@@ -196,6 +196,8 @@ export const Tags2_18 : string[]= [
 ]
 export const Tags2_19 : string[]= [ 
     "추억은 항상 미련을 부르지만",
+    "추억은 항상 후회를 부르지만",
+    // "추억은 항상 을 부르지만",
 ]
 
 export const Tags2_20 : string[]= [ 

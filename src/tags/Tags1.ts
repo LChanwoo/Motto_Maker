@@ -71,7 +71,8 @@ export const Tags1_17: string[] = [
 ]
 
 export const Tags1_18 : string[]= [
-    "안녕!"
+    "안녕!",
+    "굿 바이!"
 ]
 
 export const Tags1_19 : string[]= [
@@ -84,6 +85,7 @@ export const Tags1_20: string[] = [
 
 export const Tags1_21: string[] = [
     "커피가 쓰다",
+    "몸에 좋은 약이 쓰다"
 ]
 export const Tags1_22: string[] = [
 
