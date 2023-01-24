@@ -85,9 +85,10 @@ export const Tags1_20: string[] = [
 
 export const Tags1_21: string[] = [
     "커피가 쓰다",
-    "몸에 좋은 약이 쓰다"
+    "약이 쓰다"
 ]
 export const Tags1_22: string[] = [
+    "커피가 달다",
 
 ]
 export const Tags1_23: string[] = [
