@@ -211,3 +211,24 @@ export const Tags2_20 : string[]= [
     "가여운 사람들의 마음속에도",
 
 ]
+
+export const Tags2_21 : string[]= [ 
+    "나의 삶도 쓰다",
+    "너의 삶도 쓰다",
+    "너희의 삶도 쓰다",
+    "너희들의 삶도 쓰다",
+    "우리들의 삶도 쓰다",
+    "우리의 삶도 쓰다",
+    "모두의 삶도 쓰다",
+    "몸에 좋은 약도 쓰다",
+    "독약도 쓰다",
+    "일기를 쓰다",
+]
+export const Tags2_22 : string[]= [ 
+]
+export const Tags2_23 : string[]= [ 
+]
+export const Tags2_24 : string[]= [ 
+]
+export const Tags2_25 : string[]= [ 
+]

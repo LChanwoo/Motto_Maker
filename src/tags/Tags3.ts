@@ -228,9 +228,29 @@ export const Tags3_20 : string[]= [
     "언젠가 눈물로 가득채워질",
     "언젠가 빛으로 가득채워질",
     "언젠가 따뜻한 눈빛으로 가득채워질",
-    
+
 
 ]
 export const Tags3_21: string[]= [
+    "그렇기에 갈구한다",
+    "그렇기에 찾아나선다",
+    "그렇기에 추구한다",
+    "그렇기에 쫓는다",
+    "그렇기에 사랑한다",
+    "그렇기에 좋아한다",
+    "그렇기에 미워한다",
+    "그렇기에 노래한다",
+    "그렇기에 다시쓴다"
+]
+export const Tags3_22: string[]= [
+
+]
+export const Tags3_23: string[]= [
+
+]
+export const Tags3_24: string[]= [
+
+]
+export const Tags3_25: string[]= [
 
 ]

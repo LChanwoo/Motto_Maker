@@ -82,11 +82,26 @@ export const Tags1_20: string[] = [
     "행복을 허상이라 말하는",
 ]
 
+export const Tags1_21: string[] = [
+    "커피가 쓰다",
+]
+export const Tags1_22: string[] = [
+
+]
+export const Tags1_23: string[] = [
+
+]
+export const Tags1_24: string[] = [
+
+]
+export const Tags1_25: string[] = [
+
+]
 
 export const Tags1 = () => {
     let tmpTags = Tags1_1.concat(Tags1_2).concat(Tags1_10).concat(Tags1_11).concat(Tags1_12)
     .concat(Tags1_13).concat(Tags1_14).concat(Tags1_15).concat(Tags1_16).concat(Tags1_17).concat(Tags1_18)
-    .concat(Tags1_19).concat(Tags1_20);
+    .concat(Tags1_19).concat(Tags1_20).concat(Tags1_21).concat(Tags1_22).concat(Tags1_23).concat(Tags1_24).concat(Tags1_25);
     while (tmpTags.length >15) {
         tmpTags.splice(Math.floor(Math.random() * tmpTags.length), 1);
     }
