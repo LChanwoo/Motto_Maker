@@ -47,7 +47,7 @@ export const secondTag = (tag: string) => {
     while (tmpTags.length > 15) {
         tmpTags.splice(Math.floor(Math.random() * tmpTags.length), 1);
     }
-    return tmpTags;
+    return shuffle(tmpTags);
 }
 export const thirdTag = (tag: string) => {
     let tmpTags;
@@ -98,7 +98,7 @@ export const thirdTag = (tag: string) => {
     while (tmpTags.length > 15) {
         tmpTags.splice(Math.floor(Math.random() * tmpTags.length), 1);
     }
-    return tmpTags;
+    return shuffle(tmpTags);
 
 }
 export const finalTag = (tag: string) => {
@@ -151,6 +151,16 @@ export const finalTag = (tag: string) => {
         tmpTags.splice(Math.floor(Math.random() * tmpTags.length), 1);
     }
 
-    return tmpTags;
+    return shuffle(tmpTags);
 
 }
+
+export function shuffle(array:string[]) {
+    for (let index = array.length - 1; index > 0; index--) {
+      const randomPosition = Math.floor(Math.random() * (index + 1));
+      const temporary = array[index];
+      array[index] = array[randomPosition];
+      array[randomPosition] = temporary;
+    }
+    return array;
+  }
