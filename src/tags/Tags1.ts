@@ -98,7 +98,7 @@ export const Tags1_23: string[] = [
 
 ]
 export const Tags1_24: string[] = [
-
+    "날 부르는"
 ]
 export const Tags1_25: string[] = [
 
