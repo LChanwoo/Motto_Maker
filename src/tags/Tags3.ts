@@ -281,7 +281,6 @@ export const Tags3_24: string[]= [
     "점프하고 싶어",
     "뛰어오르고 싶어",
     "뛰어내리고 싶어",
-    
 ]
 export const Tags3_25: string[]= [
 
